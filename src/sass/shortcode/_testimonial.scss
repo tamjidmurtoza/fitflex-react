@@ -1,0 +1,61 @@
+/*=======================================================
+  14. Testimonial
+=========================================================*/
+.cs_testimonial_card {
+  height: 100%;
+  border: 1px solid;
+  border-image: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  background: var(--gray-color);
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
+  .cs_testimonial_image {
+    width: 37%;
+    flex: none;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s ease;
+    }
+    @media (max-width: 520px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .cs_testimonial_content {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .cs_testimonial_rating {
+      color: var(--accent-color);
+      font-size: 16px;
+      line-height: 1em;
+    }
+    .cs_testimonial_user {
+      font-weight: 700;
+    }
+  }
+  &:hover {
+    .cs_testimonial_image {
+      img {
+        transform: scale(1.05);
+        transform-origin: center left;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    .cs_testimonial_content {
+      padding: 20px;
+    }
+  }
+}

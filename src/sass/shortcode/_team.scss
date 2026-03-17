@@ -1,0 +1,76 @@
+/*=========================================================
+  15. Team
+===========================================================*/
+.cs_about_style_1 {
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  .cs_about_image {
+    width: 42%;
+    gap: 0px 20px;
+  }
+  .cs_about_img_1 {
+    width: 40%;
+  }
+  .cs_about_img_2 {
+    width: 60%;
+  }
+  .cs_section_heading_style_1 {
+    width: 51%;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 1399px) {
+      width: 55%;
+    }
+    @media (max-width: 1199px) {
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    flex-direction: column;
+    .cs_about_image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .cs_section_heading_style_1 {
+      width: 100%;
+    }
+  }
+}
+
+.cs_class_about_section {
+  .cs_about_image {
+    width: min(100%, 715px);
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .cs_about_content {
+    width: min(100%, 420px);
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  .cs_feature_list li {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 0px;
+    .cs_feature_title {
+      line-height: 1.625em;
+      margin-bottom: 5px;
+    }
+    .cs_feature_subtitle {
+      line-height: 1.555em;
+    }
+  }
+  .cs_feature_list :last-child {
+    margin-bottom: 0;
+  }
+}
